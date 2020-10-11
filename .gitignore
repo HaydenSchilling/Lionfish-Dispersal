@@ -1,2 +1,4 @@
 .R*
 *.Rproj
+.Rproj.user
+Data/Med_29m*

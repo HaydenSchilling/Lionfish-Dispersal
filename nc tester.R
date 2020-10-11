@@ -3,7 +3,7 @@ library(ncdf4)
 library(tidyverse)
 
 
-mydata <- nc_open("Data/Med_1984_01.nc")
+mydata <- nc_open("Output/Med_Test_output1.nc")
 mydata <- nc_open("Data/Temp_Med_1987_01.nc")
 #View a summary of the Parcels output
 
