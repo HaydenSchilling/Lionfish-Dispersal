@@ -1,0 +1,24 @@
+#!/bin/bash
+ 
+#PBS -l select=1:ncpus=1:mem=20gb:mpiprocs=1
+#PBS -W depend=afterok:1024519
+#PBS -l walltime=12:00:00
+#PBS -j oe
+#PBS -J 0-999
+#PBS -M h.schilling@unsw.edu.au
+#PBS -m ae
+
+ 
+cd $HOME
+
+module purge
+
+module load openmpi/3.1.2
+module load python/3.6.5
+
+source parcels_env/bin/activate
+
+mpirun -n 1 python3 Med_Test_2015_1.py
+mpirun -n 1 python3 Med_Test_2015_2.py
+mpirun -n 1 python3 Med_Test_2015_3.py
+

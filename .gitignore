@@ -2,3 +2,6 @@
 *.Rproj
 .Rproj.user
 Data/Med_29m*
+Data/Bathymetry/**
+Output/*
+New directory/*
